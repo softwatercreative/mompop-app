@@ -52,7 +52,7 @@ MIDDLEWARE = [
 
 
 # Ensure this is set for production
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'momandpop.urls'
 
