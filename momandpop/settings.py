@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["mompopapp-40d126d844a6.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
