@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["mompopapp-40d126d844a6.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,8 +124,9 @@ USE_TZ = True
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = 'static/'
 
-STATIC_URL = '/static/'
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, '/static/shops'),  # This tells Django where to find additional static files
@@ -136,4 +138,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
