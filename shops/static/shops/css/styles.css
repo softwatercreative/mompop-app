@@ -40,7 +40,6 @@ main {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #0078e7;
 }
 main > section > div {
   text-align: center;
@@ -54,7 +53,7 @@ main > section > div {
   .container {
     align-items: CENTER;
     justify-content: center;
-    height: 17rem;
+    height: 37rem;
   }
   .btn-box {
     display: FLEX;
@@ -75,5 +74,5 @@ main > section > div {
   height: 50px;
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 10px;
 }
