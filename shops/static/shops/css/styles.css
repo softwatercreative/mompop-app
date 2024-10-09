@@ -53,7 +53,10 @@ main > section > div {
   .container {
     align-items: CENTER;
     justify-content: center;
-    height: 37rem;
+    height: 88vh;
+  }
+  .hp-flag {
+    left: 12px;
   }
   .btn-box {
     display: FLEX;
