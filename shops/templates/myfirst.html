@@ -43,10 +43,12 @@
   </head>
   <body>
     <main>
-      <img class="hp-flag" src="{% static 'shops/img/Flag_of_Maryland.jpg' S%}" alt="The Maryland flag" />
       <section class="container">
+
         <div>
           <p class="tiny-headline">A Master List For the People</p>
+          <img class="hp-flag" src="{% static 'shops/img/Flag_of_Maryland.jpg' S%}" alt="The Maryland flag" />
+
           <h1 class="z-h1">
             Maryland<br />
             <span class="accent">Mom-and-Pop</span><br />
@@ -57,8 +59,13 @@
             <a href="{{ google_form_link }}" class="button-secondary pure-button pure-button-primary" target="_blank" rel="noopener">Add to List<i class="btn-icon fa-solid fa-plus"></i></a>
             <a href="{{ list_link }}" class="button-secondary pure-button pure-button-primary" target="_blank" rel="noopener">View List<i class="btn-icon fas fa-list"></i></a>
           </div>
+        
         </div>
       </section>
+      <div class="social-box">
+        <p>a softwaterlabs project</p>
+        <a href="https://x.com/softwaterlabs" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i></a>
+      </div>
     </main>
   </body>
 </html>

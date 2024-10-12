@@ -25,7 +25,6 @@ main {
 }
 .z-h1 {
   margin: 0;
-  margin-top: 14px;
   text-align: center;
   color: #686868;
   border-radius: 10px;
@@ -36,6 +35,7 @@ main {
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
 }
 main > section > div {
   text-align: center;
@@ -45,15 +45,25 @@ main > section > div {
   color: #9d2235;
 }
 .hp-flag {
-  border-radius: 50%;
   width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 8px;
-  left: 10px;
 }
 .btn-icon {
   margin-left: 8px;
+}
+.social-box * {
+  font-size: 12px;
+  margin: 8px;
+  color: #fff;
+}
+.social-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-box {
+  margin-top: 1.5rem;
 }
 @media (max-width: 840px) {
   .container {
@@ -64,11 +74,6 @@ main > section > div {
   .container {
     align-items: CENTER;
     justify-content: center;
-    height: 88vh;
-  }
-  .hp-flag {
-    top: 18px;
-    left: 12px;
   }
   .btn-box {
     display: FLEX;
