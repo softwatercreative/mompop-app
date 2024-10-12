@@ -52,6 +52,9 @@ main > section > div {
   top: 8px;
   left: 10px;
 }
+.btn-icon {
+  margin-left: 8px;
+}
 @media (max-width: 840px) {
   .container {
     width: 78%;
