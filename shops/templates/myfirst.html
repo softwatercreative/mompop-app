@@ -3,51 +3,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="icon"
-      href="{% static 'shops/img/favicon.ico' %}"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{% static 'shops/img/apple-touch-icon-precomposed.png' %}"
-    />
+    <link rel="icon" href="{% static 'shops/img/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'shops/img/apple-touch-icon-precomposed.png' %}"/>
     <link rel="canonical" href="https://softwaterlabs.dev/" />
     <link rel="stylesheet" href="{{ pure_css_cdn }}" />
     <link rel="stylesheet" href="{% static 'shops/css/styles.css' %}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="{% static 'shops/js/scripts.js' %}"></script>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta name="description" content="{{ meta_description }}" />
     <meta name="keywords" content="{{ meta_keywords }}" />
     <meta property="og:title" content="Mom-and-Pop Shops of Maryland" />
-    <meta
-      property="og:description"
-      content="Explore Maryland's family-owned businesses and add your favorites!"
-    />
-    <meta
-      property="og:image"
-      content="{% static 'shops/img/Flag_of_Maryland.jpg' %}"
-    />
+    <meta property="og:description" content="Explore Maryland's family-owned businesses and add your favorites!" />
+    <meta property="og:image" content="{% static 'shops/img/Flag_of_Maryland.jpg' %}" />
     <meta property="og:url" content="your_website_url" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mom-and-Pop Shops of Maryland" />
-    <meta
-      name="twitter:description"
-      content="Explore Maryland's family-owned businesses."
-    />
-    <meta
-      name="twitter:image"
-      content="{% static 'shops/img/Flag_of_Maryland.jpg' %}"
-    />
+    <meta name="twitter:description" content="Explore Maryland's family-owned businesses." />
+    <meta name="twitter:image" content="{% static 'shops/img/Flag_of_Maryland.jpg' %}" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mom-and-Pop Shops</title>
-
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
@@ -66,11 +43,7 @@
   </head>
   <body>
     <main>
-      <img
-        class="hp-flag"
-        src="{% static 'shops/img/Flag_of_Maryland.jpg' S%}"
-        alt="The Maryland flag"
-      />
+      <img class="hp-flag" src="{% static 'shops/img/Flag_of_Maryland.jpg' S%}" alt="The Maryland flag" />
       <section class="container">
         <div>
           <p class="tiny-headline">A Master List For the People</p>
@@ -81,20 +54,8 @@
           </h1>
           <p>Add to a curated list of local gems.</p>
           <div class="btn-box">
-            <a
-              href="{{ google_form_link }}"
-              class="button-secondary pure-button pure-button-primary"
-              target="_blank"
-              rel="noopener"
-              >Add to List</a
-            >
-            <a
-              href="{{ list_link }}"
-              class="button-secondary pure-button pure-button-primary"
-              target="_blank"
-              rel="noopener"
-              >View List</a
-            >
+            <a href="{{ google_form_link }}" class="button-secondary pure-button pure-button-primary" target="_blank" rel="noopener">Add to List</a>
+            <a href="{{ list_link }}" class="button-secondary pure-button pure-button-primary" target="_blank" rel="noopener">View List</a>
           </div>
         </div>
       </section>
