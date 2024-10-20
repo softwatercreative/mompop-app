@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
+from .forms import ShopsForm
 
 # Markup Values
 
@@ -18,3 +19,17 @@ all_values = {**seo_values, **html_values}
 
 def home(request):
   return render(request, "myfirst.html", all_values)  
+
+def add_shop(request):
+  if request.method == 'POST':
+    form = ShopsForm
+    if form.is_valid():
+      form.save()
+      return redirect('shop_list')
+  
+  else:
+    form = ShopsForm
+
+  
+  return render(request, 'shops/add_shop.html', {'form': form})
+
