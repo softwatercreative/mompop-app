@@ -18,7 +18,7 @@ all_values = {**seo_values, **html_values}
 # Views
 
 def home(request):
-  return render(request, "myfirst.html", all_values)  
+  return render(request, 'shops/myfirst.html', all_values)  
 
 def add_shop(request):
   if request.method == 'POST':
